@@ -2,8 +2,8 @@ import "../navCard/navCard.css"
 
 export const NavBar = () => {
     return(
-        <nav>
+        <div className="nav-bar">
             NavBar
-        </nav>
+        </div>
     )
 }

@@ -1,4 +1,12 @@
-nav{
+.nav-bar{
     background-color: #CDB4DB;
     padding: 15px;
+    /* position: fixed; */
+    width: 100%;
+    /* z-index: 1;
+    top: 0;
+     */
+    
+   
+    
 }
