@@ -1,0 +1,32 @@
+
+.article-q3{
+    
+    width: 500px;
+    margin: auto;
+    position: relative;
+    
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    
+    
+}
+
+.article-q3 img{
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.article-q3 footer{
+    background-color: white;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.article-q3 p{
+    text-align: center;
+}
