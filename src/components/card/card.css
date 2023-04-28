@@ -1,0 +1,49 @@
+.card-container-q3{
+    width: 400px;
+   height: 300px;
+   
+    margin: auto;
+    text-align: center;
+    position: relative;
+    
+}
+
+.card-container-q3 .image-container{
+    width: 400px;
+    height: 150px;
+    overflow: hidden; 
+
+}
+
+ .image-container img{
+    
+    width: 400px;
+    height: 150px;
+    object-fit: cover; /* Scale the image to cover the entire container */
+    background-size: cover; /* Ensure the image covers the entire element */
+    background-position: center center; 
+   
+    
+}
+.card-container-q3 footer{
+    position: absolute;
+    bottom: 0;
+  left: 0;
+  right: 0;
+  
+    text-align: left;
+    background-color: #0f0e17;
+    color: #a7a9be;
+    padding: 5px;  
+}
+
+.heading-card{
+    font-size: 26px;
+    color: white;
+}
+
+.card-container-q3 footer a{
+    text-decoration: none;
+    color: blue;
+    margin-left: 10px;
+}

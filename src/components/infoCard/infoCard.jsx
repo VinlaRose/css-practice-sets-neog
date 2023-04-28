@@ -3,8 +3,6 @@ import pic1 from "../../images/pic1.jpg"
 
 export const InfoCard = () => {
     return(
-        <div className="q3">
-            
             <article className="article-q3">
                 <img src={pic1} alt=" " />
                 <footer  >
@@ -12,6 +10,6 @@ export const InfoCard = () => {
                 <p>Card title</p>
               </footer>
             </article>
-        </div>
+        
     )
 }

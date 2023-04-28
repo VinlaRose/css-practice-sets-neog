@@ -3,7 +3,7 @@ import "./imageCard.css"
 
 export const ImageCard = () => {
     return(
-        <div>
+       
         
         <article className='parent-q1'>
             <img  src={child} alt="My Image" />
@@ -12,7 +12,7 @@ export const ImageCard = () => {
                 <p>Card title</p>
               </footer>
         </article>
-        </div>
+        
 
     )
 }
