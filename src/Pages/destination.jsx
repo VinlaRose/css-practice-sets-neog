@@ -4,7 +4,7 @@ import { DataContext } from "../context/context";
 
 export const Destination = () => {
     const {destinationId} = useParams();
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
     const {state} = useContext(DataContext);
     console.log(state)
 
