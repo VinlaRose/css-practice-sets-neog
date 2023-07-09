@@ -8,7 +8,7 @@ export const Home = () => {
     const navigate = useNavigate()
     useEffect(() => {
         dispatch({type: "FETCH_DATA", payload: data.continents})
-    },[]);
+    },[dispatch]);
     console.log(state);
     const goToCountry = (id) => {
         navigate(`/${id}`)

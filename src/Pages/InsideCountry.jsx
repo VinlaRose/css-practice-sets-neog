@@ -12,7 +12,7 @@ export const InsideCountry = () => {
     
     useEffect(() => {
         dispatch({type: "CURRENT_COUNTRY", payload: requiredCountry})
-    },[requiredCountry])
+    },[dispatch])
 
     const goToDestination = (id) => {
         navigate(`/:countryId/${requiredCountry.name}/${id}`)

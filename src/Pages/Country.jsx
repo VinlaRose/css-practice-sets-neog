@@ -10,7 +10,7 @@ export const Country = () => {
     console.log(requiredContinent);
     useEffect(() => {
         dispatch({type: "CURRENT_CONTINENT", payload: requiredContinent})
-    },[requiredContinent])
+    },[dispatch])
     const goToInsideCountry = (id) => {
         navigate(`/${requiredContinent.name}/${id}`)
         console.log(id)
