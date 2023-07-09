@@ -1,6 +1,7 @@
 import { useContext, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom"
 import { DataContext } from "../context/context";
+import "../App.css"
 
 export const Country = () => {
     const {countryId} = useParams();
@@ -17,12 +18,20 @@ export const Country = () => {
         console.log(id)
     }
     return (
-        <div className="country-container">
+        <div className="container">
         
         <div className="back-vutton"><button onClick={() => navigate("/")}>GoBack</button></div>
          {
             requiredContinent.countries.map(item => (
-                <div  key = {item.id} onClick={() => goToInsideCountry(item.id)}>{item.name}</div>
+                <div  key = {item.id} onClick={() => goToInsideCountry(item.id)}>
+                    <div className="card">
+                        <img src={item.image} alt="Location" className="card-image" />
+                        <div className="location-container">
+                            <span className="location-icon">&#x1F30D;</span>
+                            <span className="location-name">{item.name}</span>
+                        </div>
+                    </div>
+                </div>
             ))
          }
         </div>

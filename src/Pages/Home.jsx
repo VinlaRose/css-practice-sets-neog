@@ -2,6 +2,7 @@ import { useContext, useEffect } from "react"
 import { DataContext } from "../context/context"
 import { data } from "../data"
 import { useNavigate } from "react-router-dom";
+import "../App.css"
 
 export const Home = () => {
     const {state, dispatch} = useContext(DataContext);
@@ -18,11 +19,24 @@ export const Home = () => {
     return (
         <div>
             WELCOME TO TRIP ADVISOR
+            <h3>Top Contnents for your next holiday</h3>
+            <div className="container">
             {
                 state.continentsData.map(item => (
-                    <div key={item.id} onClick={() => goToCountry(item.id)}>{item.name}</div>
+                    <div key={item.id} onClick={() => goToCountry(item.id)}>
+                     <div className="card">
+                        <img src={item.image} alt="Location" className="card-image" />
+                        <div className="location-container">
+                            <span className="location-icon">&#x1F30D;</span>
+                            <span className="location-name">{item.name}</span>
+                        </div>
+                    </div>
+                    </div>
                 ))
             }
+                
+            </div>
+            
         </div>
     )
 }
