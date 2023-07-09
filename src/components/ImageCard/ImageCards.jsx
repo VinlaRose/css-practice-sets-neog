@@ -1,4 +1,5 @@
-import child from '../../images/child.jpg'
+// import child from '../../images/child.jpg'
+
 import "./imageCard.css"
 
 export const ImageCard = () => {
@@ -6,7 +7,7 @@ export const ImageCard = () => {
        
         
         <article className='parent-q1'>
-            <img  src={child} alt="My Image" />
+            {/* <img  src={child} alt="My Image" /> */}
               <footer  >
                 <h3>Card Decription</h3>
                 <p>Card title</p>
