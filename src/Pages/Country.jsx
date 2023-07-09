@@ -12,7 +12,8 @@ export const Country = () => {
         dispatch({type: "CURRENT_CONTINENT", payload: requiredContinent})
     },[dispatch])
     const goToInsideCountry = (id) => {
-        navigate(`/${requiredContinent.name}/${id}`)
+        navigate(`/${requiredContinent.name}/${id}`);
+        
         console.log(id)
     }
     return (

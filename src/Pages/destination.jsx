@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { useNavigate, useParams } from "react-router-dom"
+import {  useParams } from "react-router-dom"
 import { DataContext } from "../context/context";
 
 export const Destination = () => {

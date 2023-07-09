@@ -11,7 +11,8 @@ export const Home = () => {
     },[dispatch]);
     console.log(state);
     const goToCountry = (id) => {
-        navigate(`/${id}`)
+        navigate(`/${id}`);
+        
 
     }
     return (
