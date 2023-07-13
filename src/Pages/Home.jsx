@@ -20,6 +20,7 @@ export const Home = () => {
         <div>
             WELCOME TO TRIP ADVISOR
             <h3>Top Contnents for your next holiday</h3>
+            <button onClick={() => navigate("/mcr8")}>go to mcr 8</button>
             <div className="container">
             {
                 state.continentsData.map(item => (
