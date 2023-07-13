@@ -5,6 +5,8 @@ import { Home } from './Pages/Home';
 import { Country } from './Pages/Country';
 import { InsideCountry } from './Pages/InsideCountry';
 import { Destination } from './Pages/destination';
+import { MeetUpHome } from './MCR8/MeetupHome';
+import { DetailsMeeting } from './MCR8/Details';
 
 function App() {
   return (
@@ -15,6 +17,10 @@ function App() {
       <Route path='/:countryId' element={<Country/>}/>
       <Route path='/:countryId/:insideCountryId' element={<InsideCountry/>}/>
       <Route path='/:countryId/:insideCountryId/:destinationId' element={<Destination/>}/>
+
+
+      <Route path="/mcr8" element = {<MeetUpHome/>} />;
+      <Route path="/mcr8/:meetId" element = {<DetailsMeeting/>} />;
     </Routes>
 
     

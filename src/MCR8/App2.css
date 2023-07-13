@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(206, 202, 202);
+}
+.nav-bar-container{
+    display: flex;
+}
+.nav-left{
+    flex:1
+}
+.nav-right{
+    
+    margin-right: 10px;
+}
+
+.meeting-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 0px solid black;
+    width: 250px;
+    height: 300px;
+    position: relative;
+    
+  }
+
+  .card img{
+    width: 250px;
+    height: 200px;
+  }
+  
+  .badge {
+    background-color: rgb(199, 198, 198);
+    width: 50px;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+  }
+  
+  .date-time {
+    color: 90#7e7c7c;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+
+  .detailsPage{
+    display: flex;
+  }
+
+  .details-left{
+    flex: 1.10;
+    
+  }
+  .details-right{
+    
+    flex: 0.90
+  }
+
+  .details-card{
+    background-color: white;
+  }
+  
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+  }
+  
+  .popup input[type='text'],
+  .popup input[type='email'],
+  .popup input[type='submit'] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .popup input[type='submit'] {
+    background-color: pink;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .popup input[type='submit']:hover {
+    background-color: pink;
+  }
+  
